@@ -1,0 +1,1091 @@
+CSS Reset
+/*-- CSS Reset --*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* Navbar Styles */
+body {
+  margin: 0;
+  font-family: "Pixelify Sans", system-ui;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#00108a;
+  padding: 5px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #F9FF41;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  color: #58FF00;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* HOME PAGE */
+
+/* --------------------------------------------------
+   BACKGROUND SETUP
+-------------------------------------------------- */
+.HOME-page-BACKGROUND {
+  background-image: url(images/background\ 2.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --------------------------------------------------
+   HERO / CENTER CONTENT
+-------------------------------------------------- */
+.hero-container {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin-top: 150px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Logo Image */
+.logo {
+  width: 100%;
+  max-width: 600px; /* Limit image size on desktop */
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* HOME PAGE (mc button) */
+.start-btn {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.85rem;
+  color: #dcffa1;
+  background: #286cff;
+  border: 3px solid #00022f;
+  border-top-color: #38ffc0;
+  border-left-color: #38ffc0;
+  border-bottom-color: #00022f;
+  border-right-color: #00022f;
+  padding: 12px 0;
+  width: 500%;
+  max-width: 380px;
+  cursor: pointer;
+  box-shadow: inset 0 0 2px rgba(5, 0, 25, 0.8);
+  margin-right: 300px; 
+}
+
+.start-btn:active {
+  border-top-color: #38ffc0;
+  border-left-color: #38ffc0;
+  border-bottom-color: #38ffc0;
+  border-right-color: #38ffc0;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE MEDIA QUERIES (MOBILE STYLING)
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.8rem 0.6rem;
+  }
+
+  .navbar a {
+    font-size: 0.6rem; /* Shrink nav font for mobile screens */
+  }
+
+  .logo {
+    max-width: 300%;
+    height: 200px;
+    width: 300px;
+  }
+
+  .start-btn {
+    width: 200px;
+    font-size: 0.75rem;
+    margin-right: 10px; 
+  }
+}
+
+/* INTRODUCTION PAGE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.introduction-page {
+  font-family: 'Press Start 2P', monospace;
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+   BACKGROUND SETUP
+-------------------------------------------------- */
+.INTRO-page-BACKGROUND {
+  background-image: url(images/pink-star.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ==================================================
+   LAYOUT & BANNER
+   ================================================== */
+.content-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 20px 100px 20px;
+  position: relative;
+}
+
+/* Header Banner */
+.banner-container {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  height:100px;
+  background: #3a82ee; 
+  background-image: url(images/RD\ banner.jpg); /* Custom banner image */
+  background-size: contain;
+  background-repeat: repeat-x;
+  border: 3px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2.3rem;
+  color: #000832;
+  letter-spacing: 3px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #ffffff;
+  text-align: center;
+}
+
+/* ==================================================
+   ABOUT ME CONTENT (AVATAR & BIO)
+   ================================================== */
+.about-container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Column: Avatar */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 12px;
+  font-size: 1.3em; 
+}
+
+.avatar-frame {
+  width: 400px;
+  height: 400px;
+  border: 3px solid #000;
+  background-color: #000;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.4);
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Right Column: Bio Box */
+.bio-box {
+  flex: 1;
+  min-height: 200px;
+  background-color: #4c0099; /* Deep purple box */
+  border: 3px solid #000;
+  margin-top: 32px; /* Aligns visually with the top of avatar frame */
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.4);
+}
+
+.bio-text {
+  font-size: 0.85rem;
+  color: #ffffff;
+  line-height: 1.6;
+  word-break: break-word;
+  padding: 15px; 
+  font-size: 1.3em; 
+  text-align: center;
+  text-shadow: 2px 2px #000;
+}
+
+/* ==================================================
+   STICKERS
+   ================================================== */
+.sticker {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.sticker img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.floating-sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+}
+
+/* Roblox Sticker Top-Left */
+.roblox-sticker { top: 30px; left: -210px; width: 150px; rotate: 15deg;}
+.domo-sticker { bottom: -130px; right: -350px; width: 400px; }
+.spider-man { top: 100px; right: -200px; width: 180px; }
+
+/* ==================================================
+   RESPONSIVE DESIGN (MOBILE ADAPTATION)
+   ================================================== */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+    padding: 10px 5px;
+    gap: 0;
+  }
+
+  .navbar a {
+    font-size: 0.55rem;
+  }
+
+  .banner-image {
+    height: 80px;
+    width: 100%;
+    margin-right: -50px;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+
+  /* Stack Avatar and Bio Box vertically on mobile */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    right: -0.1%;
+    top: -55px;
+  }
+
+  .avatar-section {
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  .avatar-frame {
+    width: 300px;
+    height: 300px;
+  }
+
+  .bio-box {
+    width: 100%;
+    margin-top: 10px;
+    min-width: 5px;
+  }
+
+  .bio-text {
+    font-size: 16px;
+  }
+
+  /* Scale and reposition stickers for smaller screens */
+  .roblox-sticker {
+    top: 100px;
+    left: 10px;
+    width: 90px;
+  }
+
+  .domo-sticker {
+    bottom: 30px;
+    right: -15px;
+    width: 120px;
+  }
+
+}
+
+/* ARTWORKS PAGE */
+
+/* --------------------------------------------------
+   BACKGROUND SETUP
+-------------------------------------------------- */
+.ARTWORKS-page-BACKGROUND {
+  background-image: url(images/kirby\ background.gif);
+  background-color:rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+
+/* ==================================================
+   LAYOUT & BANNER
+   ================================================== */
+.content-wrapper-artwork {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 20px 100px 20px;
+  position: relative;
+}
+
+/* Header Banner */
+.banner-container-artwork {
+  width: 200%;
+  margin-bottom: 30px;
+}
+
+.banner-image-artwork{
+  width: 50%;
+  height:100px;
+  background: #3a82ee; 
+  background-image: url(images/art-banner.jpg); /* Custom banner image */
+  background-size: contain;
+  background-repeat: repeat-x;
+  border: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-artwork {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.9rem;
+  color: #ffffff;
+  letter-spacing: 3px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.artworks-page {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #030119;
+  background-image: radial-gradient(#2b1055 1px, transparent 1px);
+  background-size: 20px 20px; /* Pixelated starfield background effect */
+  color: #ffffff;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+   SIDE BORDERS & NAVBAR
+-------------------------------------------------- */
+.side-border {
+  top: 90px;
+  bottom: 100px;;
+  width: 35px;
+  height: 1350px;
+  background-image: url(images/sideboarders.jpeg);
+  z-index: 10;
+}
+
+.border-left { 
+  position: absolute;
+  left: 20px; 
+  background-image: url(images/sideboarders.jpeg);
+ 
+}
+
+.border-right { 
+  position: absolute;
+  right: 20px; 
+  background-image: url(images/sideboarders.jpeg); 
+
+}
+
+/* Page Container within borders */
+.content-wrapper{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* Centers the header and carousels horizontally */
+  padding: 20px 65px 80px 65px;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+   CAROUSEL COVERFLOW
+-------------------------------------------------- */
+.gallery-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 85px; /* Creates a large vertical gap between carousels */
+  position: relative;
+}
+
+.gallery-section .carousel-track-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+  height: 270px;
+  flex: 1;
+  position: relative;
+}
+
+.gallery-section:last-of-type {
+ margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px; 
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px #000, -2px -2px 0px #000; 
+}
+
+.section-title-video {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: -10px; 
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px #000, -2px -2px 0px #000; 
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 300px;
+  max-width: 850px; 
+  margin: 0 auto; 
+  position: relative;
+  touch-action: pan-y;
+}
+
+.carousel-track {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 800px;
+  height: 270px;
+  flex: 1; 
+  position: relative;
+}
+
+/* Default state for all cards */
+.card {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #000;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  background: #000;
+  overflow: hidden;
+  margin-top: 60px;   
+  /* Hidden state defaults */
+  opacity: 0;
+  transform: translateX(0) scale(0.5);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Visible 3D Positions */
+.card-left {
+  transform: translateX(-150px) scale(0.8) rotateY(18deg);
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: auto;
+}
+
+.card-center {
+  transform: translateX(0) scale(1.15) rotateY(0deg);
+  z-index: 3;
+  opacity: 1;
+  border: 3px solid #9f04ff;
+  box-shadow: 0 0 15px rgba(255, 75, 198, 0.6);
+  pointer-events: auto;
+}
+
+.card-right {
+  transform: translateX(150px) scale(0.8) rotateY(-18deg);
+  z-index: 1;
+  opacity: 0.6;
+  pointer-events: auto;
+}
+
+/* Make the Videos carousel track & cards widescreen (16:9) */
+#videos-carousel .carousel-track {
+  height: 220px;
+}
+
+#videos-carousel .card {
+  width: 320px;
+  height: 180px; /* Exact 16:9 widescreen ratio */
+}
+
+/* Force the embedded iframe to fill 100% of the card */
+#videos-carousel .card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Spread side video cards slightly further apart so they frame the wider center card */
+#videos-carousel .card-left {
+  transform: translateX(-210px) scale(0.8) rotateY(18deg);
+}
+
+#videos-carousel .card-right {
+  transform: translateX(210px) scale(0.8) rotateY(-18deg);
+}
+
+/* Show magnifying glass cursor on the active center artwork */
+.card-center img {
+  cursor: zoom-in;
+}
+
+/* ==================================================
+   FULL IMAGE LIGHTBOX POPUP
+   ================================================== */
+.art-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(5, 2, 26, 0.88);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.art-lightbox.active {
+  display: flex;
+}
+
+.lightbox-window {
+  background: #c0c0c0;
+  border: 3px solid #ffffff;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  box-shadow: 6px 6px 0px #000;
+  max-width: 92vw;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.lightbox-bar {
+  background: #0b15ad;
+  color: #fbef35;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.7rem;
+}
+
+.lightbox-close {
+  font-family: 'Press Start 2P', monospace;
+  background: #c0c0c0;
+  color: #000;
+  border: 2px solid #ffffff;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  padding: 4px 7px;
+  font-size: 0.65rem;
+  cursor: pointer;
+}
+
+.lightbox-close:active {
+  border-top-color: #404040;
+  border-left-color: #404040;
+  border-right-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.lightbox-content {
+  background: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.lightbox-content img {
+  max-width: 85vw;
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Shows the entire uncropped image */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .lightbox-bar {
+    font-size: 0.55rem;
+  }
+
+  .lightbox-content img {
+    max-width: 88vw;
+    max-height: 75vh;
+  }
+}
+
+/* Retro Arrow Buttons */
+.carousel-btn {
+  font-family: 'Press Start 2P', monospace;
+  background: #737373;
+  color: #fff;
+  border: 3px outset #a6a6a6;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 5;
+  margin-top: 50px; 
+}
+
+.carousel-btn:active {
+  border-style: inset;
+}
+
+/* --------------------------------------------------
+   FLOATING STICKERS
+-------------------------------------------------- */
+.floating-sticker {
+  position: absolute;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.ufo { top: 120px; right: -310px; width: 250px; rotate: 15deg;}
+.miku { bottom: -10px; left: -350px; width: 300px; }
+.burger { top: 400px; right: 800px; width: 200px; rotate: -15deg;}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+  .banner-container-artwork {
+  width: 200%;
+  margin-bottom: 30px;
+}
+
+.banner-image-artwork{
+  width: 50%;
+  height:100px;
+  background: #3a82ee; 
+  background-image: url(images/art-banner.jpg); /* Custom banner image */
+  background-size: contain;
+  background-repeat: repeat-x;
+  border: 3px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-border {
+  display: none;
+}
+  
+/* artworks */
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card-left {
+    transform: translateX(-70px) scale(0.75) rotateY(12deg);
+  }
+
+  .card-center {
+    transform: translateX(0) scale(1.1) rotateY(0deg);
+  }
+
+  .card-right {
+    transform: translateX(70px) scale(0.75) rotateY(-12deg);
+  }
+
+  .carousel-container {
+    gap: 10px;
+    padding: 0 5px;
+  }
+
+  .carousel-btn {
+    margin-top: 50px;
+  }
+
+  .gallery-section {
+    margin-top: 35px;
+    margin-bottom: 100px; /* Tighter gap on phone screens */
+
+  }
+
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* stickers */
+
+  .ufo {
+    top: 100px;
+    right:1px;
+    width: 90px;
+    rotate: -15deg;
+  }
+
+  .miku {
+    bottom: 0px;
+    left: 5px;
+    width: 90px;
+  }
+
+  .burger {
+    top: 515px;
+    left: -10px;
+    width: 90px;
+    rotate: 15deg;
+  }
+
+}
+
+
+/* CONTACT ME PAGE*/
+.CONTACT-page-BACKGROUND {
+  background-image: url(images/creeper_background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Banner */
+.banner-container-contact {
+  width: 200%;
+  margin-bottom: 30px;
+}
+
+.banner-image-contact {
+   width: 50%;
+  height:100px;
+  background: #3a82ee; 
+  background-image: url(images/miku-banner.jpg); /* Custom banner image */
+  background-size: contain;
+  background-repeat: repeat-x;
+  border: 3px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-contact {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.9rem;
+  color: #ffffff;
+  letter-spacing: 3px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  text-align: center;
+}
+
+
+form {
+  max-width: 600px;
+  margin:auto;
+  padding: 20px;
+  border: 5px solid #ab005b;
+  border-radius: 0px;
+  background-color: #f80084
+}
+
+.contact-access-key {
+  display: none;
+}
+
+.contact-name {
+  font-family: "Pixelify Sans", system-ui;
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #ab005b;
+  border-radius: 4px;
+}
+
+.contact-email {
+  font-family: "Pixelify Sans", system-ui;
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #ab005b;
+  border-radius: 4px;
+}
+
+.contact-message {
+  font-family: "Pixelify Sans", system-ui;
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #ab005b;
+  border-radius: 4px;
+}
+
+.contact-submit {
+  font-family: "Pixelify Sans", system-ui;
+  background-color: #7b00ff;
+  color: #f1d1ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-submit:hover {
+  background-color: #3a007d;
+}
+
+.nyah-cat {bottom: 100px; left: 640px; width: 400px;}
+
+@media (max-width: 768px) {
+
+  .CONTACT-page-BACKGROUND {
+    background-image: url(images/creeper_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  /* stickers */
+ .floating-sticker {
+    position: absolute;
+    pointer-events: none;
+    z-index: 4;
+  }
+
+  .nyah-cat {
+    bottom: 100px;
+    left: 105px;
+    width: 200px;
+  }
+
+}
+  
+/* ==================================================
+   FOOTER FOR ALL PAGES
+   ================================================== */
+.footer {
+  font-family: "Pixelify Sans", system-ui;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(8, 0, 125);
+  color: #c1fb00;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-artworks {
+  font-family: "Pixelify Sans", system-ui;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(8, 0, 125);
+  color: #c1fb00;
+  text-align: center;
+  padding: 10px;
+}
+
+/* THANK YOU PAGE */
+
+.thank-you-image {
+  width: 100%;
+  max-width: 900px; /* Limit image size on desktop */
+  height: auto;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+}
+
+@media (max-width: 768px) {
+  .thank-you-image {
+    width: 100%;
+    max-width: 350px; 
+    height: auto;
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+  }
+
+  .THANK-YOU-page-BACKGROUND {
+    background-image: url(images/background\ 2.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+
+}
+
